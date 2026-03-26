@@ -3,107 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jenkins CI/CD</title>
+    <title>Ruthvik Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
-            background-color: #f4f4f4;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
 
-        header {
-            background-color: #d33833;
-            color: white;
-            padding: 20px;
-            text-align: center;
+        body {
+            background: #0f172a;
+            color: #fff;
         }
 
+        /* Navbar */
         nav {
-            background: #333;
-            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 80px;
+            background: transparent;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 80px;
+        }
+
+        .hero-text h1 {
+            font-size: 50px;
+        }
+
+        .hero-text span {
+            color: #38bdf8;
+        }
+
+        .hero-text p {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: #38bdf8;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        /* Image */
+        .hero-img img {
+            width: 350px;
+            border-radius: 20px;
+        }
+
+        /* Section */
+        section {
+            padding: 80px;
+        }
+
+        .about {
             text-align: center;
         }
 
-        nav a {
-            color: white;
-            margin: 15px;
-            text-decoration: none;
-            font-weight: bold;
+        .about h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #38bdf8;
         }
 
-        nav a:hover {
-            color: #d33833;
-        }
-
-        .container {
-            width: 80%;
+        .about p {
+            max-width: 600px;
             margin: auto;
-            padding: 20px;
-        }
-
-        .section {
-            background: white;
-            margin: 20px 0;
-            padding: 20px;
-            border-radius: 8px;
+            color: #cbd5e1;
         }
 
         footer {
-            background: #333;
-            color: white;
             text-align: center;
-            padding: 10px;
+            padding: 20px;
+            background: #020617;
+            color: #94a3b8;
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>Jenkins CI/CD</h1>
-    <p>Automation Server for Continuous Integration & Deployment</p>
-</header>
-
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#features">Features</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<div class="container">
-
-    <div id="home" class="section">
-        <h2>Welcome</h2>
-        <p>Jenkins is an open-source automation server used to build, test, and deploy software.</p>
-    </div>
-
-    <div id="about" class="section">
-        <h2>About Jenkins</h2>
-        <p>Jenkins helps developers automate parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery.</p>
-    </div>
-
-    <div id="features" class="section">
-        <h2>Features</h2>
+    <!-- Navbar -->
+    <nav>
+        <h2>Ruthvik</h2>
         <ul>
-            <li>Easy installation</li>
-            <li>Hundreds of plugins</li>
-            <li>Supports CI/CD pipelines</li>
-            <li>Integration with Git, Docker, Kubernetes</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Ruthvik</span></h1>
+            <p>A passionate developer interested in DevOps, Machine Learning, and building modern web applications.</p>
+            <button class="btn">View My Work</button>
+        </div>
+
+        <div class="hero-img">
+            <img src="https://via.placeholder.com/350" alt="Profile">
+        </div>
     </div>
 
-    <div id="contact" class="section">
-        <h2>Contact</h2>
-        <p>Email: ruthvikrao091@gmail.com</p>
-    </div>
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I'm a tech enthusiast who loves working with cloud technologies, automation, and AI-based solutions.
+            I enjoy solving real-world problems using modern tools like Docker, AWS, and Machine Learning.
+        </p>
+    </section>
 
-</div>
-
-<footer>
-    <p>© 2026 Jenkins Demo Website</p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        © 2026 Ruthvik | All Rights Reserved
+    </footer>
 
 </body>
 </html>
